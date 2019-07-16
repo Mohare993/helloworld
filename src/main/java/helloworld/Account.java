@@ -1,31 +1,37 @@
 package helloworld;
 
 public class Account {
-
-	private int id = 0;
-	private int accountNumber;
+	
+	private Integer id;
+	private String accountNumber;
 	private String firstName;
 	private String lastName;
-	private static int counter;
 
-	public static int getNextId() {
-		return ++counter;
+	public Account(Integer id, String accountNumber, String firstName, String lastName) {
+		super();
+		this.id = id;
+		this.accountNumber = accountNumber;
+		this.firstName = firstName;
+		this.lastName = lastName;
 	}
-	
-	public static int getId() {
-		return counter;
+
+	public Account() {
+
 	}
 
+	public Integer getId() {
+		return id;
+	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
-	public int getAccountNumber() {
+	public String getAccountNumber() {
 		return accountNumber;
 	}
 
-	public void setAccountNumber(int accountNumber) {
+	public void setAccountNumber(String accountNumber) {
 		this.accountNumber = accountNumber;
 	}
 
@@ -45,18 +51,5 @@ public class Account {
 		this.lastName = lastName;
 	}
 
-	public Account(int accountNumber, String firstName, String lastName) {
-		super();
-		this.id = getNextId();
-		this.accountNumber = accountNumber;
-		this.firstName = firstName;
-		this.lastName = lastName;
-	}
-
-	@Override
-	public String toString() {
-		return "Account [id=" + id + ", accountNumber=" + accountNumber + ", firstName=" + firstName + ", lastName="
-				+ lastName + "]";
-	}
 
 }
