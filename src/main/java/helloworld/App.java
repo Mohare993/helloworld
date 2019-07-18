@@ -1,7 +1,7 @@
 package helloworld;
 
-import Util.GensonUtil;
-import Util.JSONUtil;
+import util.GensonUtil;
+import util.JSONUtil;
 
 public class App {
 
