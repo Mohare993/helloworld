@@ -10,13 +10,5 @@ public class JacksonUtil {
 		this.jackson = new ObjectMapper();
 	}
 
-	public String getJSONForObject(Object obj) {
-		return jackson.writeValueAsString(obj);
-	}
-
-	public <T> T getObjectForJSON(String jsonString, Class<T> clazz) {
-		
-		return jackson.readValue(jsonString, clazz);
-	}
 
 }
