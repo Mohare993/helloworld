@@ -1,4 +1,4 @@
-package helloworld;
+package helloworld.persistance.repo;
 
 import util.GensonUtil;
 import util.JSONUtil;

@@ -1,15 +1,12 @@
-package helloworld.persistance.repo;
+package service;
 
 import java.util.List;
 
-import javax.security.auth.login.AccountNotFoundException;
+import exceptions.AccountNotFoundException;
 import helloworld.persistance.repo.Account;
 
-
-public interface AccountRepository {
+public interface AccountService {
 	
-	final String SUCCESS = "Operation succeeded";
-	final String FAILURE = "Operation failed";
 
 	String getAllAccounts();
 
@@ -20,5 +17,4 @@ public interface AccountRepository {
 	String updateAccount(int accountId, String account) throws AccountNotFoundException;
 
 	List<Account> findAccountsByFirstName(String firstName);
-
 }
