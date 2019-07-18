@@ -1,10 +1,11 @@
-package helloworld;
+package helloworld.persistance.repo;
 
 import java.util.HashMap;
 
 import java.util.Map;
 
-import Util.JSONUtil;
+import helloworld.Account;
+import util.JSONUtil;
 
 
 
@@ -16,14 +17,6 @@ public class JavaMap implements AccountRepository {
 
 	private JSONUtil json = new JSONUtil();
 
-	// You must provide concrete implementation for each of these methods
-	// do not change the method signature
-	// THINK - if the parameter is a String, or the return type is a String
-	// How can I convert to a String from an Object?
-	// What utility methods do I have available?
-
-	// You must complete this section using TDD
-	// You can use the suggested tests or build your own.
 
 	public String getAllAccounts() {
 		// TODO Auto-generated method stub

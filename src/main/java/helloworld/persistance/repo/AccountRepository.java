@@ -1,4 +1,4 @@
-package helloworld;
+package helloworld.persistance.repo;
 
 public interface AccountRepository {
 		final String SUCCESS = "Operation failed";
